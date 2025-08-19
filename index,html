@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzaribba!!! - Pedido Online</title>
+</head>
+<body>
+  <h1>Pizzaribba!!!</h1>
+  <form>
+    <fieldset>
+      <legend>Tamanho da Pizza</legend>
+      <label>
+        <input type="radio" name="tamanho" value="pequena" required>
+        Pequena
+      </label><br>
+      <label>
+        <input type="radio" name="tamanho" value="media">
+        Média
+      </label><br>
+      <label>
+        <input type="radio" name="tamanho" value="grande">
+        Grande
+      </label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Sabores Extras</legend>
+      <label>
+        <input type="checkbox" name="extra" value="bacon">
+        Bacon
+      </label><br>
+      <label>
+        <input type="checkbox" name="extra" value="cheddar">
+        Cheddar
+      </label><br>
+      <label>
+        <input type="checkbox" name="extra" value="azeitona">
+        Azeitona
+      </label><br>
+      <label>
+        <input type="checkbox" name="extra" value="cebola">
+        Cebola
+      </label>
+    </fieldset>
+
+    <br>
+
+    <label for="dataEntrega">Data da Entrega:</label><br>
+    <input type="date" id="dataEntrega" name="dataEntrega" required><br><br>
+
+    <label for="horaEntrega">Hora da Entrega:</label><br>
+    <input type="time" id="horaEntrega" name="horaEntrega" required><br><br>
+
+    <label for="telefone">Telefone para Contato:</label><br>
+    <input type="tel" id="telefone" name="telefone" 
+           pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" 
+           placeholder="(99) 99999-9999" 
+           required><br><br>
+
+    <button type="reset">Apagar Tudo</button>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
